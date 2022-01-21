@@ -1,4 +1,4 @@
-# Import necessary libraries
+# Import libraries
 import streamlit as st
 
 # Define the multipage class to manage the multiple apps in our program
