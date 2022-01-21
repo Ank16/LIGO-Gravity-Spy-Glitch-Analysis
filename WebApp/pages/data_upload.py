@@ -12,7 +12,7 @@ def app():
     st.markdown("### Upload images for classification")
     st.write("\n")
     
-    #Allows uploaded data to be seen on other pages
+    #Initializes global variables so data can be seen by other webpages
     if 'files' not in st.session_state:
         st.session_state.files = []
     if 'data' not in st.session_state:
@@ -29,5 +29,7 @@ def app():
             imageArray = np.expand_dims(imageArray, 0)
             data.append(imageArray)
             files.append(file.name)
+            
+    #Put local data into the global variable so other webpages can access it
     st.session_state.data = data
     st.session_state.files = files
