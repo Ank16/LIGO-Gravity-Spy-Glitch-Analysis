@@ -53,6 +53,9 @@ model = Sequential([
 #Compile model
 model.compile(optimizer = Adam(0.001), 
               loss = 'categorical_crossentropy', metrics = ['accuracy', tf.keras.metrics.AUC(curve='PR')])
+model.summary()
 
 #Train model
-model.summary()
+history= model.fit(train_gen,
+                 epochs=10,
+                 validation_data=val_gen)
