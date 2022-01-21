@@ -1,2 +1,2 @@
 # LIGO-Gravity-Spy-Glitch-Analysis
-Neural network trained on LIGO Gravity Spy data to accurately classify noise in the data.
+Code for LIGO glitch analysis science fair project 2021-2022
